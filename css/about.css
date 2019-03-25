@@ -1,0 +1,169 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 5;
+  overflow-x: hidden;
+  line-height: 22px;
+  /*padding-top: 20px;*/
+}
+
+/* Control the left side */
+.west {
+  left: 0;
+  background-color: #fff;
+}
+
+/* Control the right side */
+.east {
+  right: 0;
+  overflow-y:hidden;
+}
+
+.centered {
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+  text-align: center;
+  font-size: 13px;
+}
+
+.skills-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 50px;
+}
+
+.skills-links i {
+  margin: 5px 10px;
+}
+
+.skills-links img {
+  width: 3em;
+  height: 3em;
+  margin: 0px 10px;
+}
+
+.skills-links .sql {
+  width: 3.5em;
+  height: 3.5em;
+  margin-left: 0px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.label {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  /* Split the screen in half */
+  .split {
+    width: 100%;
+    height: 50%;
+    position: fixed;
+  }
+
+  /* Control the left side */
+  .west {
+    bottom: 0;
+    background-color: #fff;
+  }
+
+  /* Control the right side */
+  .east {
+    top: 0;
+    overflow-x:hidden;
+  }
+
+  .centered {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .skills-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    margin-left: 25%;
+  }
+
+  .skills-links i {
+    margin: 0px 10px;
+  }
+
+  .skills-links .link img {
+    width: 3em;
+    height: 3em;
+    margin-right: 0px;
+  }
+
+  .skills-links .link {
+    margin-right: 60px;
+    margin-top: 0px;
+  }
+
+  .skills-links .node {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .label {
+    display: block;
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .tooltiptext {
+    display: none;
+  }
+}
