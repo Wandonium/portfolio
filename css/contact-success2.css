@@ -15,6 +15,18 @@ html, body {
           perspective: 400;
 }
 
+@media screen and (max-width: 580px) {
+  .view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 500px;
+    -webkit-perspective: 400;
+            perspective: 400;
+  }
+}
+
 .plane {
   width: 120px;
   height: 120px;

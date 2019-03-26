@@ -78,28 +78,28 @@ Main Components
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/face-id-brain-small.png");
+  background-image: url("img/face-id-brain-small.png");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: '../img/face-id-brain-small.png';
+  content: 'img/face-id-brain-small.png';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/startup-landing-page-small.png");
+  background-image: url("img/startup-landing-page-small.png");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: '../img/startup-landing-page-small.png';
+  content: 'img/startup-landing-page-small.png';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("../img/robo-small.png");
+  background-image: url("img/robo-small.png");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: '../img/robo-small.png';
+  content: 'img/robo-small.png';
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */
@@ -151,42 +151,42 @@ Main Components
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: '../img/face-id-brain.png';
+    content: 'img/face-id-brain.png';
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("../img/face-id-brain.png");
+    background-image: url("img/face-id-brain.png");
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: '../img/startup-landing-page-dark.png';
+    content: 'img/startup-landing-page-dark.png';
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("../img/startup-landing-page-dark.png");
+    background-image: url("img/startup-landing-page-dark.png");
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
-    content: '../img/robo-dark.png';
+    content: 'img/robo-dark.png';
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
-    background-image: url("../img/robo-dark.png");
+    background-image: url("img/robo-dark.png");
   }
   .projects-container .cd-single-project::after {
     height: 100vh;
     width: 100%;
     opacity: 0;
   }
-  .projects-container .cd-single-project:nth-of-type(1):hover h2 {
+  /*.projects-container .cd-single-project:nth-of-type(1):hover h2 {
     color: #000;
   }
   .projects-container .cd-single-project:nth-of-type(1):hover p {
     color: #000;
-  }
+  }*/
   
   .projects-container .cd-single-project.is-loaded {
     /* show items when background images have been loaded */
@@ -364,7 +364,7 @@ Main Components
   position: fixed;
   top: 80px;
   right: 5%;
-  background: url("../img/cd-icon-close-mobile-white.png") no-repeat center center;
+  background: url("img/cd-icon-close-mobile-white.png") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -373,7 +373,7 @@ Main Components
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
-    background-image: url("../img/cd-icon-close-desktop-white.png");
+    background-image: url("img/cd-icon-close-desktop-white.png");
   }
 }
 
@@ -386,11 +386,11 @@ Main Components
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../img/cd-icon-arrow-mobile-white.png") no-repeat center center;
+  background: url("img/cd-icon-arrow-mobile-white.png") no-repeat center center;
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-scroll {
-    background-image: url("../img/cd-icon-arrow-desktop-white.png");
+    background-image: url("img/cd-icon-arrow-desktop-white.png");
   }
 }
 

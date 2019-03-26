@@ -168,3 +168,30 @@ a {
 #replay:active {
   background: rgba(255, 255, 255, 0.1);
 }
+
+@media screen and (max-width: 580px) {
+  .section-text {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 25px;
+  }
+
+  .section-text > h1 {
+    white-space: normal;
+    line-height: 40px;
+  }
+
+  #replay {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 3px;
+  bottom: 80px;
+  color: #FFF;
+  left: 50%;
+  outline: 0;
+  padding: 10px 30px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+}
