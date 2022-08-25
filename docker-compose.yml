@@ -47,6 +47,17 @@ services:
       - VIRTUAL_HOST=m.hillarywando.com,www.m.hillarywando.com
     networks:
       - proxy_net
+  flask-book-api:
+    image: wandonium/flask-book-api
+    container_name: flask-book-api
+    restart: unless-stopped
+    depends_on:
+      - nginx-proxy
+      - letsencrypt
+    environment:
+      - VIRTUAL_HOST=flask-book-api.m.hillarywando.com,www.flask-book-api.m.hillarywando.com
+    networks:
+      - proxy_net
 networks:
   cert_net:
     driver: bridge

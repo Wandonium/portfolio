@@ -4,3 +4,6 @@ build:
 
 run: 
 	docker run --name portfolio -d -p 80:80 --rm wandonium/portfolio:latest
+
+run-prod:
+	docker-compose up -d
