@@ -7,3 +7,11 @@ run:
 
 run-prod:
 	docker-compose up -d
+
+SSH_STRING:=wando@102.37.136.131
+
+ssh:
+	ssh ${SSH_STRING}
+
+copy:
+	scp -r ./* ${SSH_STRING}:~/portfolio-projects/portfolio
